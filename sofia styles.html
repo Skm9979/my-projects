@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <style>
+        /*css style here*/
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aliceblue;
+    color: lightpink;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(2, 58, 59);
+    text-decoration: none;
+}
+
+.product {
+    border-color: 1px solid;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <!--html code here-->
+    <header>
+        <h1>Welcome to Sofia Styles</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS2Sf06YsrQyqh6SN94NnNpSZbzaWy0TU6Vg&">
+            <h3>classy heels</h3>
+            <p>Ksh6600.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="data:image/jpeg;base64,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">
+            <h3>louis vuitton<br>
+            khaki sling bag mini</br></h3>
+            <p>Ksh19,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+    <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FkHCeDirR7MBID3NF3ZThe7MypYTXZ429g&s">
+            <h3>Evening dress</h3>
+            <p>Ksh10000</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkneEYqwWOWRH3q4VEvA7njW09IrayThLVA&s">
+            <h3>pink short</h3>
+            <p>Ksh1500</p>
+            <button>Add to Cart</button>
+        </div> 
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn72oGXTZ2SyrBPM3SJkr6ob77_MezPyCGVA&s">
+            <h3>black summer dress</h3>
+            <p>Ksh2100</p>
+            <button>Add to Cart</button>
+        </div> 
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjNGYeydc81dHPwOa841Xk4ljVAo1g5G2LtA&s">
+            <h3> warm sweater</h3>
+            <p>Ksh1800</p>
+            <button>Add to Cart</button>
+        </div> 
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to serve you at the best</p>
+        <h2>our contact</h2>
+        <p><b> No:0799798266<br>
+               No:0788339898</p></br></b>
+    <p><b>Email Address:Keasofia236@gmail.com</b></p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Online Shopping. All rights reserved.</p>
+    </footer>
+    <script>
+        //javascript code here
+        // script.js
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for shopping with sofia styles, ' + document.getElementById('name').value + '!');
+});
+
+    </script>
+</body>
+</html>
